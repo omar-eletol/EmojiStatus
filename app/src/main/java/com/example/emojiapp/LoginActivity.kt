@@ -40,18 +40,16 @@ class LoginActivity : AppCompatActivity() {
 
 
         // Configure Google Sign In
-        /* val gso =
-             GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                 .requestIdToken(getString(R.string.default_web_client_id))
-                 .requestEmail()
-                 .build()
-         val googleSignInClient = GoogleSignIn.getClient(this, gso)
-         sign_in_button.setOnClickListener {
-             val signInIntent = googleSignInClient.signInIntent
-             startActivityForResult(signInIntent, RC_GOOGLE_SIGN_IN)
-         }*/
-
-
+        val gso =
+            GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestEmail()
+                .build()
+        val googleSignInClient = GoogleSignIn.getClient(this, gso)
+        sign_in_button.setOnClickListener {
+            val signInIntent = googleSignInClient.signInIntent
+            startActivityForResult(signInIntent, RC_GOOGLE_SIGN_IN)
+        }
     }
 
 
