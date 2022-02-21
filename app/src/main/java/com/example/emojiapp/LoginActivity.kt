@@ -53,7 +53,6 @@ class LoginActivity : AppCompatActivity() {
     }
 
 
-/*
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -104,5 +103,5 @@ class LoginActivity : AppCompatActivity() {
         startActivity(Intent(this, MainActivity::class.java))
         finish()
         // Navigate to MainActivity
-    }*/
+    }
 }
